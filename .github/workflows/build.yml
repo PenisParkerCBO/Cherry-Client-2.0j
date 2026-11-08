@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.cherry'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.jar {
+    archiveBaseName = 'CherryClient'
+    archiveVersion = '1.0'
+}
